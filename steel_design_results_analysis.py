@@ -1,13 +1,16 @@
+
 from tkinter import filedialog
 import os
 import csv
-
-import numpy as np
-
 import sqlite3
 # https://stackoverflow.com/questions/70937038/group-by-works-with-select-columns-not-in-group-by
+import numpy as np
+
 
 def select_file() -> str:
+    '''
+    Function selecting windows directory with .csv files exported from the program.
+    '''
     file_path = filedialog.askdirectory(title="Select the directory with exported .csv files")
     if file_path:
         print("Selected path:", file_path, '\n')
@@ -15,6 +18,7 @@ def select_file() -> str:
         print("No path selected.\n")
 
     return file_path
+   
 
 def parse_range_string(range_string):
     result = []
@@ -326,11 +330,13 @@ if __name__=='__main__':
 
     # print(param/(std_val**3))
 
+    # Commit changes to Database
+    db.commit()
 
     # Delete unused files
-    db.close()
-    db_filepath = "{}{}{}".format(os.getcwd(), os.sep, 'RFEM_results.db')
-    os.remove(db_filepath)
+    # db.close()
+    # db_filepath = "{}{}{}".format(os.getcwd(), os.sep, 'RFEM_results.db')
+    # os.remove(db_filepath)
 
 
     '''
