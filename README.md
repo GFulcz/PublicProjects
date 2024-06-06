@@ -1,10 +1,10 @@
-# Grouping_Analysis
+# grouping_analysis
 
-Grouping_Analysis is a Python script and function for grouping data within a given dataset and calculating simple reference values to their grouped characteristics.
+grouping_analysis is a Python script and function for grouping data within a given dataset and calculating simple reference values to their grouped characteristics.
 
 ## Installation
 
-Grouping_Analysis is a single file Python script and doesn't require explicit installation. 
+grouping_analysis is a single file Python script and doesn't require explicit installation. 
 Script uses [pandas](https://pypi.org/project/pandas/) library.
 
 ```bash
