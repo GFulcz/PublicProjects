@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="p_qkyW_S0PV6SEHQRbwD" name="Page-1">
-        <mxGraphModel dx="1072" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="4368" dy="3048" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -18,7 +18,7 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="24" value="Check parameter:&lt;br&gt;&lt;b&gt;Exclude_recognised_boolean_columns &lt;/b&gt;&lt;i&gt;bool&lt;/i&gt;&lt;br&gt;input parameter" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;" parent="1" vertex="1">
+                <mxCell id="24" value="Check parameter:&lt;br&gt;&lt;b&gt;exclude_recognised_boolean_columns &lt;/b&gt;&lt;i&gt;bool&lt;/i&gt;&lt;br&gt;input parameter" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="78.75" y="210" width="362.5" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="26" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" parent="1" source="24" target="33" edge="1">
@@ -41,7 +41,7 @@
                         <mxPoint x="19" y="-23" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="28" value="Check parameter:&lt;br&gt;&lt;b&gt;Analysistype &lt;/b&gt;&lt;i&gt;str&lt;/i&gt;&lt;br&gt;input parameter" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;" parent="1" vertex="1">
+                <mxCell id="28" value="Check parameter:&lt;br&gt;&lt;b&gt;analysis_type &lt;/b&gt;&lt;i&gt;str&lt;/i&gt;&lt;br&gt;input parameter" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="87.5" y="640" width="345" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="29" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="24" target="31" edge="1">
@@ -56,7 +56,7 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="31" value="Create &lt;b&gt;Groups&lt;/b&gt;&amp;nbsp;&lt;i&gt;dataframe&amp;nbsp;&lt;/i&gt;from the dataset&lt;br&gt;by using &lt;b&gt;pd.User_DataFrame.groupby()&lt;/b&gt; &lt;i&gt;method &lt;/i&gt;on input parameter dataset&lt;br&gt;with &lt;br&gt;by=&lt;b&gt;Grouping_columns &lt;/b&gt;&lt;i style=&quot;&quot;&gt;list &lt;/i&gt;input parameter&lt;br&gt;dropna=&lt;b&gt;Grouping_dropna &lt;/b&gt;&lt;i&gt;bool &lt;/i&gt;input parameter" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                <mxCell id="31" value="Create &lt;b&gt;groups_dataframe&lt;/b&gt;&amp;nbsp;&lt;i&gt;dataframe&amp;nbsp;&lt;/i&gt;from the dataset&lt;br&gt;by using &lt;b&gt;pd.user_dataframe.groupby()&lt;/b&gt; &lt;i&gt;method &lt;/i&gt;on input parameter dataset&lt;br&gt;with &lt;br&gt;by=&lt;b&gt;grouping_columns &lt;/b&gt;&lt;i style=&quot;&quot;&gt;list &lt;/i&gt;input parameter&lt;br&gt;dropna=&lt;b&gt;grouping_dropna &lt;/b&gt;&lt;i&gt;bool &lt;/i&gt;input parameter" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
                     <mxGeometry x="38.129999999999995" y="520" width="443.75" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="32" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="31" target="28" edge="1">
@@ -66,10 +66,10 @@
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="33" value="Create &lt;b&gt;boolean_columns &lt;/b&gt;&lt;i&gt;list&lt;/i&gt;&lt;br&gt;by calling &lt;b&gt;List_detected_boolean_columns() &lt;/b&gt;&lt;i style=&quot;&quot;&gt;f&lt;/i&gt;&lt;i&gt;unction&lt;/i&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                <mxCell id="33" value="Create &lt;b&gt;boolean_columns &lt;/b&gt;&lt;i&gt;list&lt;/i&gt;&lt;br&gt;by calling &lt;b&gt;list_detected_boolean_columns() &lt;/b&gt;&lt;i style=&quot;&quot;&gt;f&lt;/i&gt;&lt;i&gt;unction&lt;/i&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
                     <mxGeometry x="360" y="354" width="330" height="46" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" value="Extend &lt;b&gt;Exclude_columns &lt;/b&gt;&lt;i style=&quot;&quot;&gt;l&lt;/i&gt;&lt;i&gt;ist&lt;/i&gt; by&lt;b&gt; boolean_columns &lt;/b&gt;&lt;i&gt;list&lt;/i&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                <mxCell id="37" value="Extend &lt;b&gt;exclude_columns &lt;/b&gt;&lt;i style=&quot;&quot;&gt;l&lt;/i&gt;&lt;i&gt;ist&lt;/i&gt; by&lt;b&gt; boolean_columns &lt;/b&gt;&lt;i&gt;list&lt;/i&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
                     <mxGeometry x="360" y="440" width="330" height="46" as="geometry"/>
                 </mxCell>
                 <mxCell id="38" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="33" target="37" edge="1">
@@ -86,14 +86,14 @@
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="50" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of &lt;/span&gt;Groups&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;Groups.max &lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="432.5" y="772.5" width="247.5" height="75" as="geometry"/>
+                <mxCell id="50" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of&amp;nbsp;&lt;/span&gt;groups_dataframe&amp;nbsp;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;groups_dataframe.max &lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="432.5" y="772.5" width="297.5" height="75" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Create &lt;/span&gt;Grouped_results&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/span&gt;&lt;br&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;pd.DataFrame &lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;method&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with &lt;/span&gt;Groups&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;i&gt;dataframe&lt;/i&gt;&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px;&quot;&gt;on&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; font-weight: 400;&quot;&gt;3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20400%3B%26quot%3B%26gt%3BDefine%20max%20values%20of%20%26lt%3B%2Fspan%26gt%3BGroups%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3B%26amp%3Bnbsp%3B%26lt%3B%2Fspan%26gt%3B%26lt%3Bi%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bdataframe%26lt%3B%2Fi%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bby%20using%20%26lt%3B%2Fspan%26gt%3BGroups.max%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bwith%26lt%3Bbr%26gt%3Bnumerinc_only%20%3D%20True%26lt%3Bbr%26gt%3B%26lt%3Bbr%26gt%3Band%26lt%3B%2Fspan%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3BRound%20the%20calculation%20values%20to%20the%20%26lt%3B%2Fspan%26gt%3BPrecision%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3B%26amp%3Bnbsp%3B%26lt%3Bi%26gt%3Bint%26lt%3B%2Fi%26gt%3B%26amp%3Bnbsp%3Binputparameter%26lt%3B%2Fspan%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3BstrokeColor%3Ddefault%3BfontFamily%3DHelvetica%3BfontSize%3D12%3BfontColor%3Ddefault%3BfillColor%3Dnone%3Balign%3Dleft%3Bspacing%3D10%3BfontStyle%3D1%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22430%22%20y%3D%22750%22%20width%3D%22407.5%22%20height%3D%22120%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; font-weight: 400;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20400%3B%26quot%3B%26gt%3BDefine%20max%20values%20of%20%26lt%3B%2Fspan%26gt%3BGroups%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3B%26amp%3Bnbsp%3B%26lt%3B%2Fspan%26gt%3B%26lt%3Bi%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bdataframe%26lt%3B%2Fi%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bby%20using%20%26lt%3B%2Fspan%26gt%3BGroups.max%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bwith%26lt%3Bbr%26gt%3Bnumerinc_only%20%3D%20True%26lt%3Bbr%26gt%3B%26lt%3Bbr%26gt%3Band%26lt%3B%2Fspan%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3BRound%20the%20calculation%20values%20to%20the%20%26lt%3B%2Fspan%26gt%3BPrecision%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3B%26amp%3Bnbsp%3B%26lt%3Bi%26gt%3Bint%26lt%3B%2Fi%26gt%3B%26amp%3Bnbsp%3Binputparameter%26lt%3B%2Fspan%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3BstrokeColor%3Ddefault%3BfontFamily%3DHelvetica%3BfontSize%3D12%3BfontColor%3Ddefault%3BfillColor%3Dnone%3Balign%3Dleft%3Bspacing%3D10%3BfontStyle%3D1%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22430%22%20y%3D%22750%22%20width%3D%22407.5%22%20height%3D%22120%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&amp;nbsp;&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="1051" y="775" width="220" height="70" as="geometry"/>
+                <mxCell id="51" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Create &lt;/span&gt;grouped_results&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/span&gt;&lt;br&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;pd.DataFrame &lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;method&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with &lt;/span&gt;groups_dataframe&amp;nbsp;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;dataframe&lt;/i&gt;&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px;&quot;&gt;on&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; font-weight: 400;&quot;&gt;3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20400%3B%26quot%3B%26gt%3BDefine%20max%20values%20of%20%26lt%3B%2Fspan%26gt%3BGroups%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3B%26amp%3Bnbsp%3B%26lt%3B%2Fspan%26gt%3B%26lt%3Bi%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bdataframe%26lt%3B%2Fi%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bby%20using%20%26lt%3B%2Fspan%26gt%3BGroups.max%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bwith%26lt%3Bbr%26gt%3Bnumerinc_only%20%3D%20True%26lt%3Bbr%26gt%3B%26lt%3Bbr%26gt%3Band%26lt%3B%2Fspan%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3BRound%20the%20calculation%20values%20to%20the%20%26lt%3B%2Fspan%26gt%3BPrecision%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3B%26amp%3Bnbsp%3B%26lt%3Bi%26gt%3Bint%26lt%3B%2Fi%26gt%3B%26amp%3Bnbsp%3Binputparameter%26lt%3B%2Fspan%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3BstrokeColor%3Ddefault%3BfontFamily%3DHelvetica%3BfontSize%3D12%3BfontColor%3Ddefault%3BfillColor%3Dnone%3Balign%3Dleft%3Bspacing%3D10%3BfontStyle%3D1%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22430%22%20y%3D%22750%22%20width%3D%22407.5%22%20height%3D%22120%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; font-weight: 400;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20400%3B%26quot%3B%26gt%3BDefine%20max%20values%20of%20%26lt%3B%2Fspan%26gt%3BGroups%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3B%26amp%3Bnbsp%3B%26lt%3B%2Fspan%26gt%3B%26lt%3Bi%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bdataframe%26lt%3B%2Fi%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bby%20using%20%26lt%3B%2Fspan%26gt%3BGroups.max%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3Bwith%26lt%3Bbr%26gt%3Bnumerinc_only%20%3D%20True%26lt%3Bbr%26gt%3B%26lt%3Bbr%26gt%3Band%26lt%3B%2Fspan%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3BRound%20the%20calculation%20values%20to%20the%20%26lt%3B%2Fspan%26gt%3BPrecision%26lt%3Bspan%20style%3D%26quot%3Bfont-weight%3A%20normal%3B%26quot%3B%26gt%3B%26amp%3Bnbsp%3B%26lt%3Bi%26gt%3Bint%26lt%3B%2Fi%26gt%3B%26amp%3Bnbsp%3Binputparameter%26lt%3B%2Fspan%26gt%3B%22%20style%3D%22whiteSpace%3Dwrap%3Bhtml%3D1%3BstrokeColor%3Ddefault%3BfontFamily%3DHelvetica%3BfontSize%3D12%3BfontColor%3Ddefault%3BfillColor%3Dnone%3Balign%3Dleft%3Bspacing%3D10%3BfontStyle%3D1%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22430%22%20y%3D%22750%22%20width%3D%22407.5%22%20height%3D%22120%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&amp;nbsp;&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="1101" y="775" width="220" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="56" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;Round the calculation values&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;by using&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;Groups.round&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;method&amp;nbsp;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/i&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;with&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;Precision&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;int&lt;/i&gt;&amp;nbsp;inputparameter&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="780" y="780" width="211" height="60" as="geometry"/>
+                <mxCell id="56" value="&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;Round the calculation values&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;by using&amp;nbsp;&lt;/span&gt;&lt;b&gt;groups_dataframe.round&amp;nbsp;&lt;/b&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;method&amp;nbsp;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/i&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;with p&lt;/span&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;recision&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;int&lt;/i&gt;&amp;nbsp;inputparameter&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="780" width="280" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="57" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="50" target="56" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
@@ -102,17 +102,17 @@
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="58" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="56" target="51" edge="1">
+                <mxCell id="58" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="56" target="51" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="1031" y="820" as="sourcePoint"/>
-                        <mxPoint x="1111" y="820" as="targetPoint"/>
+                        <mxPoint x="1110" y="810" as="sourcePoint"/>
+                        <mxPoint x="1161" y="820" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="61" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="60" target="50" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="62" value="case 'max'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="61" vertex="1" connectable="0">
+                <mxCell id="62" value="case 'TYPE_MAX'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="61" vertex="1" connectable="0">
                     <mxGeometry x="0.194" relative="1" as="geometry">
                         <mxPoint x="-5" y="-20" as="offset"/>
                     </mxGeometry>
@@ -126,17 +126,17 @@
                 <mxCell id="72" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="67" target="56" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="720" y="910"/>
+                            <mxPoint x="750" y="910"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="67" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of &lt;/span&gt;Groups&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;Groups.min&amp;nbsp;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="432.5" y="872.5" width="247.5" height="75" as="geometry"/>
+                <mxCell id="67" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of &lt;/span&gt;groups_dataframe&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;groups_dataframe.min&amp;nbsp;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="432.5" y="872.5" width="297.5" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="68" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="70" target="67" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="69" value="case 'min'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="68" vertex="1" connectable="0">
+                <mxCell id="69" value="case 'TYPE_MIN'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="68" vertex="1" connectable="0">
                     <mxGeometry x="0.194" relative="1" as="geometry">
                         <mxPoint x="-5" y="-20" as="offset"/>
                     </mxGeometry>
@@ -150,17 +150,17 @@
                 <mxCell id="79" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="73" target="56" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="710" y="1000"/>
+                            <mxPoint x="760" y="1000"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="73" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of &lt;/span&gt;Groups&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;Groups.sum&amp;nbsp;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="432.5" y="970" width="247.5" height="75" as="geometry"/>
+                <mxCell id="73" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of&amp;nbsp;&lt;/span&gt;groups_dataframe&amp;nbsp;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;groups_dataframe.sum&amp;nbsp;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="432.5" y="970" width="297.5" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="74" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="76" target="73" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="75" value="case 'sum'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="74" vertex="1" connectable="0">
+                <mxCell id="75" value="case 'TYPE_SUM'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="74" vertex="1" connectable="0">
                     <mxGeometry x="0.194" relative="1" as="geometry">
                         <mxPoint x="-5" y="-20" as="offset"/>
                     </mxGeometry>
@@ -174,17 +174,17 @@
                 <mxCell id="87" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="80" target="56" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="710" y="1098"/>
+                            <mxPoint x="750" y="1100"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="80" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of &lt;/span&gt;Groups&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;Groups.mean&amp;nbsp;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="432.5" y="1060" width="247.5" height="75" as="geometry"/>
+                <mxCell id="80" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of&amp;nbsp;&lt;/span&gt;groups_dataframe&amp;nbsp;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;groups_dataframe.mean&amp;nbsp;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="432.5" y="1060" width="297.5" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="81" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="83" target="80" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="82" value="case 'mean'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="81" vertex="1" connectable="0">
+                <mxCell id="82" value="case 'TYPE_MEAN'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="81" vertex="1" connectable="0">
                     <mxGeometry x="0.194" relative="1" as="geometry">
                         <mxPoint x="-5" y="-20" as="offset"/>
                     </mxGeometry>
@@ -202,13 +202,13 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="88" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of &lt;/span&gt;Groups&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;Groups.mean&amp;nbsp;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="432.5" y="1150" width="247.5" height="75" as="geometry"/>
+                <mxCell id="88" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of&amp;nbsp;&lt;/span&gt;groups_dataframe&amp;nbsp;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;groups_dataframe.median&amp;nbsp;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="432.5" y="1150" width="297.5" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="89" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="91" target="88" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="90" value="case 'median'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="89" vertex="1" connectable="0">
+                <mxCell id="90" value="case 'TYPE_MEDIAN'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="89" vertex="1" connectable="0">
                     <mxGeometry x="0.194" relative="1" as="geometry">
                         <mxPoint x="-5" y="-20" as="offset"/>
                     </mxGeometry>
@@ -226,13 +226,13 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="94" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of &lt;/span&gt;Groups&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;Groups.mean&amp;nbsp;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="432.5" y="1241" width="247.5" height="75" as="geometry"/>
+                <mxCell id="94" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Define max values of&amp;nbsp;&lt;/span&gt;groups_dataframe&amp;nbsp;&lt;i style=&quot;font-weight: normal;&quot;&gt;dataframe&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;groups_dataframe.std&amp;nbsp;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;method&lt;/i&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;with&lt;br&gt;numerinc_only = True&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="432.5" y="1241" width="297.5" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="95" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="97" target="94" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="96" value="case 'median'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="95" vertex="1" connectable="0">
+                <mxCell id="96" value="case 'TYPE_STD'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="95" vertex="1" connectable="0">
                     <mxGeometry x="0.194" relative="1" as="geometry">
                         <mxPoint x="-5" y="-20" as="offset"/>
                     </mxGeometry>
@@ -244,12 +244,12 @@
                     <mxGeometry x="255" y="1273.5" width="10" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="99" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;raise &lt;/span&gt;NotImplementedError &lt;i style=&quot;font-weight: normal;&quot;&gt;error&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&quot;Not yet implemented&quot;&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="432.5" y="1330" width="247.5" height="75" as="geometry"/>
+                    <mxGeometry x="532.5" y="1329.75" width="247.5" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="100" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="102" target="99" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="101" value="case 'Confidence_interval'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="100" vertex="1" connectable="0">
+                <mxCell id="101" value="case 'TYPE_CONFIDENCE_INTERVAL'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="100" vertex="1" connectable="0">
                     <mxGeometry x="0.194" relative="1" as="geometry">
                         <mxPoint x="-15" y="-20" as="offset"/>
                     </mxGeometry>
@@ -260,8 +260,8 @@
                 <mxCell id="102" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=24;fillColor=#000000;strokeColor=default;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
                     <mxGeometry x="255" y="1362.5" width="10" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="104" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;raise &lt;/span&gt;ValueError&amp;nbsp;&lt;i style=&quot;font-weight: normal;&quot;&gt;error&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&quot;Analysistype: Analysis must be one of {&lt;/span&gt;Analysistype_valid &lt;i style=&quot;font-weight: normal;&quot;&gt;list}&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&quot;&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="432.5" y="1420" width="247.5" height="75" as="geometry"/>
+                <mxCell id="104" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;raise &lt;/span&gt;ValueError&amp;nbsp;&lt;i style=&quot;font-weight: normal;&quot;&gt;error&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&quot;analysis_type: Must be one of {&lt;/span&gt;AnalysisType.valid_name()&amp;nbsp;&lt;i style=&quot;font-weight: normal;&quot;&gt;list}&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&quot;&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="532.5" y="1420" width="247.5" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="105" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="107" target="104" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -274,19 +274,19 @@
                 <mxCell id="107" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=24;fillColor=#000000;strokeColor=default;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
                     <mxGeometry x="255" y="1452.5" width="10" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="111" value="Check parameter:&lt;br&gt;&lt;b&gt;Resultstype&amp;nbsp;&lt;/b&gt;&lt;i&gt;str&lt;/i&gt;&lt;br&gt;input parameter" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="988.5" y="960" width="345" height="100" as="geometry"/>
+                <mxCell id="111" value="Check parameter:&lt;br&gt;&lt;b&gt;results_type&amp;nbsp;&lt;/b&gt;&lt;i&gt;str&lt;/i&gt;&lt;br&gt;input parameter" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1038.5" y="960" width="345" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="112" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="51" target="111" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="1230" y="890" as="sourcePoint"/>
-                        <mxPoint x="1310" y="890" as="targetPoint"/>
+                        <mxPoint x="1280" y="890" as="sourcePoint"/>
+                        <mxPoint x="1360" y="890" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="113" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="111" target="119" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1155" y="1083.75" as="sourcePoint"/>
+                        <mxPoint x="1205" y="1083.75" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="114" value="match" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="113" vertex="1" connectable="0">
@@ -294,13 +294,13 @@
                         <mxPoint x="19" y="-23" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="115" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Create a &lt;/span&gt;df_range&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;list&lt;/span&gt;&amp;nbsp;&lt;br&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;range(User_Dataframe.shape[0])&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;to define max length of the input parameter&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp;dataset&amp;nbsp;&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="1431" y="1116.25" width="349" height="75" as="geometry"/>
+                <mxCell id="115" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Create a &lt;/span&gt;df_range&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;list&lt;/span&gt;&amp;nbsp;&lt;br&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;by using &lt;/span&gt;range(user_dataframe.shape[0])&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;to define max length of the input parameter&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp;dataset&amp;nbsp;&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="1577" y="1116.25" width="349" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="116" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="119" target="115" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="117" value="case 'fill_with_grouped'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="116" vertex="1" connectable="0">
+                <mxCell id="117" value="case 'TYPE_FILL_WITH_GROUPED'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="116" vertex="1" connectable="0">
                     <mxGeometry x="0.194" relative="1" as="geometry">
                         <mxPoint x="-5" y="-20" as="offset"/>
                     </mxGeometry>
@@ -309,26 +309,26 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="119" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=24;fillColor=#000000;strokeColor=default;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-                    <mxGeometry x="1155" y="1148.75" width="10" height="10" as="geometry"/>
+                    <mxGeometry x="1205" y="1148.75" width="10" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="121" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="123" target="115" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1430" y="1253.75" as="targetPoint"/>
+                        <mxPoint x="1480" y="1253.75" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1350" y="1250"/>
+                            <mxPoint x="1600" y="1250"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="122" value="case 'calculate_relative_grouped'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="121" vertex="1" connectable="0">
+                <mxCell id="122" value="case 'TYPE_CALCULATE_RELATIVE_GROUPED'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="121" vertex="1" connectable="0">
                     <mxGeometry x="0.194" relative="1" as="geometry">
-                        <mxPoint x="-73" y="-20" as="offset"/>
+                        <mxPoint x="-90" y="-21" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="123" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=24;fillColor=#000000;strokeColor=default;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-                    <mxGeometry x="1155" y="1248.75" width="10" height="10" as="geometry"/>
+                    <mxGeometry x="1205" y="1248.75" width="10" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="124" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;raise &lt;/span&gt;ValueError&amp;nbsp;&lt;i style=&quot;font-weight: normal;&quot;&gt;error&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&quot;Resultstype: Resultstype must be one of {&lt;/span&gt;Resultstype_valid &lt;i style=&quot;font-weight: normal;&quot;&gt;list}&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&quot;&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="1430" y="1345" width="247.5" height="75" as="geometry"/>
+                <mxCell id="124" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;raise &lt;/span&gt;ValueError&amp;nbsp;&lt;i style=&quot;font-weight: normal;&quot;&gt;error&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&quot;Resultstype: Resultstype must be one of {&lt;/span&gt;ResultsType.valid_name()&amp;nbsp;&lt;i style=&quot;font-weight: normal;&quot;&gt;list}&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&quot;&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="1576" y="1345" width="247.5" height="75" as="geometry"/>
                 </mxCell>
                 <mxCell id="125" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="127" target="124" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -339,106 +339,106 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="127" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=24;fillColor=#000000;strokeColor=default;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-                    <mxGeometry x="1155" y="1377.5" width="10" height="10" as="geometry"/>
+                    <mxGeometry x="1205" y="1377.5" width="10" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="128" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="123" target="127" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="1200" y="1290" as="sourcePoint"/>
-                        <mxPoint x="1280" y="1290" as="targetPoint"/>
+                        <mxPoint x="1250" y="1290" as="sourcePoint"/>
+                        <mxPoint x="1330" y="1290" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="129" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Create a &lt;/span&gt;Dataframe_grouped&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;i&gt;dataframe&lt;/i&gt;&lt;br&gt;by using &lt;/span&gt;pd.DataFrame &lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;method&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;with&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;data=None&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;columns=&lt;/i&gt;User_DataFrame.colums&lt;br&gt;to create empty &lt;i&gt;dataframe &lt;/i&gt;with the original structure of columns&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="1950" y="1091.88" width="260" height="123.75" as="geometry"/>
+                <mxCell id="129" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Create a d&lt;/span&gt;ataframe_grouped&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;i&gt;dataframe&lt;/i&gt;&lt;br&gt;by using &lt;/span&gt;pd.DataFrame &lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;method&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;with&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;data=None&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;columns=u&lt;/i&gt;ser_dataframe.colums&lt;br&gt;to create empty &lt;i&gt;dataframe &lt;/i&gt;with the original structure of columns&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="2202" y="1091.88" width="260" height="123.75" as="geometry"/>
                 </mxCell>
-                <mxCell id="130" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Create a &lt;/span&gt;Dataframe_compared&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;i&gt;dataframe&lt;/i&gt;&lt;br&gt;by using &lt;/span&gt;pd.DataFrame &lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;method&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;with&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;data=None&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;columns=&lt;/i&gt;User_DataFrame.colums&lt;br&gt;to create empty &lt;i&gt;dataframe &lt;/i&gt;with the original structure of columns&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
-                    <mxGeometry x="1950" y="1238.75" width="260" height="123.75" as="geometry"/>
+                <mxCell id="130" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;Create a d&lt;/span&gt;ataframe_compared&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp;&lt;i&gt;dataframe&lt;/i&gt;&lt;br&gt;by using &lt;/span&gt;pd.DataFrame &lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;method&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;with&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-style: italic; font-weight: normal;&quot;&gt;data=None&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;columns=u&lt;/i&gt;ser_dataframe.colums&lt;br&gt;to create empty &lt;i&gt;dataframe &lt;/i&gt;with the original structure of columns&lt;/span&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="2202" y="1238.75" width="260" height="123.75" as="geometry"/>
                 </mxCell>
                 <mxCell id="132" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="115" target="129" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1650" y="1225" as="sourcePoint"/>
-                        <mxPoint x="1916" y="1225" as="targetPoint"/>
+                        <mxPoint x="1796" y="1225" as="sourcePoint"/>
+                        <mxPoint x="2062" y="1225" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="133" value="case 'fill_with_grouped'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="132" vertex="1" connectable="0">
+                <mxCell id="133" value="case 'TYPE_FILL_WITH_GROUPED'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="132" vertex="1" connectable="0">
                     <mxGeometry x="0.194" relative="1" as="geometry">
-                        <mxPoint x="-5" y="-20" as="offset"/>
+                        <mxPoint x="-21" y="-24" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="136" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="115" target="130" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1819.9992307101757" y="1335.912294198067" as="sourcePoint"/>
-                        <mxPoint x="2160.9545454545455" y="1273.5" as="targetPoint"/>
+                        <mxPoint x="1965.9992307101757" y="1335.912294198067" as="sourcePoint"/>
+                        <mxPoint x="2306.9545454545455" y="1273.5" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1820" y="1301"/>
+                            <mxPoint x="1966" y="1301"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="137" value="case 'calculate_relative_grouped'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="136" vertex="1" connectable="0">
+                <mxCell id="137" value="case 'TYPE_CALCULATE_RELATIVE_GROUPED'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="136" vertex="1" connectable="0">
                     <mxGeometry x="0.194" relative="1" as="geometry">
-                        <mxPoint x="30" y="-52" as="offset"/>
+                        <mxPoint x="21" y="-60" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="138" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;For every &lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;row&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;index in &lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;df_range&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;background-color: initial;&quot;&gt;list&lt;/i&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="2470" y="1130" width="230" height="37.5" as="geometry"/>
+                    <mxGeometry x="2722" y="1130" width="230" height="37.5" as="geometry"/>
                 </mxCell>
-                <mxCell id="139" value="Create &lt;b&gt;original_row_dict &lt;/b&gt;&lt;i&gt;dictionary &lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filled with values obtained&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;by using&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;User_DataFrame.iloc[row]&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;background-color: initial;&quot;&gt;method&lt;/i&gt;&lt;/div&gt;at a given&amp;nbsp;&lt;b&gt;row &lt;/b&gt;index&lt;br&gt;to create a dictionary of values copied from original dataset" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2415" y="1196.25" width="340" height="101.25" as="geometry"/>
+                <mxCell id="139" value="Create &lt;b&gt;original_row_dict &lt;/b&gt;&lt;i&gt;dictionary &lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filled with values obtained&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;by using u&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;ser_dataframe.iloc[row]&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;background-color: initial;&quot;&gt;method&lt;/i&gt;&lt;/div&gt;at a given&amp;nbsp;&lt;b&gt;row &lt;/b&gt;index&lt;br&gt;to create a dictionary of values copied from original dataset" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2667" y="1196.25" width="340" height="101.25" as="geometry"/>
                 </mxCell>
-                <mxCell id="140" value="Create &lt;b&gt;original_row_index&amp;nbsp;&lt;/b&gt;&lt;i&gt;tuple&lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filled with values obtained&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;by using&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;tuple(original_row[Grouping_columns].values)&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;background-color: initial;&quot;&gt;function&lt;/i&gt;&lt;/div&gt;at a given&amp;nbsp;&lt;b&gt;row &lt;/b&gt;index&lt;br&gt;to create a tuple of categorical and numerical values used to define groups at the start of algorithm" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2310" y="1329.75" width="550" height="80" as="geometry"/>
+                <mxCell id="140" value="Create &lt;b&gt;original_row_index&amp;nbsp;&lt;/b&gt;&lt;i&gt;tuple&lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filled with values obtained&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;by using&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;tuple(original_row[grouping_columns].values)&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;i style=&quot;background-color: initial;&quot;&gt;function&lt;/i&gt;&lt;/div&gt;at a given&amp;nbsp;&lt;b&gt;row &lt;/b&gt;index&lt;br&gt;to create a tuple of categorical and numerical values used to define groups at the start of algorithm" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2562" y="1329.75" width="550" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="142" value="Create &lt;b&gt;grouped_row_dict&amp;nbsp;&lt;/b&gt;&lt;i&gt;dictionary &lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filled with values obtained&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;by using &lt;b&gt;Grouped_results.loc[original_row_index].to_dict() &lt;/b&gt;&lt;i&gt;methods&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;at a given&amp;nbsp;&lt;b&gt;row &lt;/b&gt;index&lt;br&gt;to create a dictionary of values calculated during grouping and analyse process" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2365" y="1443.75" width="440" height="101.25" as="geometry"/>
+                <mxCell id="142" value="Create &lt;b&gt;grouped_row_dict&amp;nbsp;&lt;/b&gt;&lt;i&gt;dictionary &lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filled with values obtained&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;by using g&lt;b&gt;rouped_results.loc[original_row_index].to_dict() &lt;/b&gt;&lt;i&gt;methods&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;at a given&amp;nbsp;&lt;b&gt;row &lt;/b&gt;index&lt;br&gt;to create a dictionary of values calculated during grouping and analyse process" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2617" y="1443.75" width="440" height="101.25" as="geometry"/>
                 </mxCell>
                 <mxCell id="143" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="138" target="139" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2765" y="1163.75" as="sourcePoint"/>
-                        <mxPoint x="2845" y="1163.75" as="targetPoint"/>
+                        <mxPoint x="3017" y="1163.75" as="sourcePoint"/>
+                        <mxPoint x="3097" y="1163.75" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="144" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="139" target="140" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2775" y="1303.75" as="sourcePoint"/>
-                        <mxPoint x="2855" y="1303.75" as="targetPoint"/>
+                        <mxPoint x="3027" y="1303.75" as="sourcePoint"/>
+                        <mxPoint x="3107" y="1303.75" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="145" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="140" target="142" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2865" y="1433.75" as="sourcePoint"/>
-                        <mxPoint x="2945" y="1433.75" as="targetPoint"/>
+                        <mxPoint x="3117" y="1433.75" as="sourcePoint"/>
+                        <mxPoint x="3197" y="1433.75" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="146" value="Create &lt;b&gt;compared_row_dict&amp;nbsp;&lt;/b&gt;&lt;i&gt;dictionary &lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filled with values obtained&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;by using &lt;b&gt;Compare_rows_relative()&amp;nbsp;&lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;with&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;original_row_dict, grouped_row_dict, Exclude_columns, Precision &lt;/b&gt;as&amp;nbsp;parameters&lt;/span&gt;&lt;/div&gt;at a given&amp;nbsp;&lt;b&gt;row &lt;/b&gt;index&lt;br&gt;to create a dictionary of values relative to the original dataset" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2600" y="1608.12" width="490" height="120" as="geometry"/>
+                <mxCell id="146" value="Create &lt;b&gt;compared_row_dict&amp;nbsp;&lt;/b&gt;&lt;i&gt;dictionary &lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filled with values obtained&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;by using &lt;b&gt;_compare_rows_relative()&amp;nbsp;&lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;with&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;original_row_dict, grouped_row_dict, exclude_columns, precision &lt;/b&gt;as&amp;nbsp;parameters&lt;/span&gt;&lt;/div&gt;at a given&amp;nbsp;&lt;b&gt;row &lt;/b&gt;index&lt;br&gt;to create a dictionary of values relative to the original dataset" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2852" y="1608.12" width="490" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="147" value="Create &lt;b&gt;grouped_values_dict&amp;nbsp;&lt;/b&gt;&lt;i&gt;dictionary &lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filled with values obtained&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;by using &lt;b&gt;Fill_grouped_rows()&amp;nbsp;&lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;with&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;original_row_dict, grouped_row_dict, Exclude_columns&amp;nbsp;&lt;/b&gt;&amp;nbsp;as&amp;nbsp;parameters&lt;/span&gt;&lt;/div&gt;at a given&amp;nbsp;&lt;b&gt;row &lt;/b&gt;index&lt;br&gt;to create a dictionary of values copied from the &lt;b&gt;Grouped_results&lt;/b&gt;&amp;nbsp;&lt;i&gt;dataframe&lt;/i&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2140" y="1608.12" width="430" height="120" as="geometry"/>
+                <mxCell id="147" value="Create &lt;b&gt;grouped_values_dict&amp;nbsp;&lt;/b&gt;&lt;i&gt;dictionary &lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filled with values obtained&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;by using &lt;b&gt;_fill_grouped_rows()&amp;nbsp;&lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;with&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;original_row_dict, grouped_row_dict, exclude_columns&amp;nbsp;&lt;/b&gt;&amp;nbsp;as&amp;nbsp;parameters&lt;/span&gt;&lt;/div&gt;at a given&amp;nbsp;&lt;b&gt;row &lt;/b&gt;index&lt;br&gt;to create a dictionary of values copied from the g&lt;b&gt;rouped_results&lt;/b&gt;&amp;nbsp;&lt;i&gt;dataframe&lt;/i&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2392" y="1608.12" width="430" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="148" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="129" target="138" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2290" y="1150" as="sourcePoint"/>
-                        <mxPoint x="2370" y="1150" as="targetPoint"/>
+                        <mxPoint x="2542" y="1150" as="sourcePoint"/>
+                        <mxPoint x="2622" y="1150" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="152" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="130" target="138" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2270" y="1260" as="sourcePoint"/>
-                        <mxPoint x="2350" y="1260" as="targetPoint"/>
+                        <mxPoint x="2522" y="1260" as="sourcePoint"/>
+                        <mxPoint x="2602" y="1260" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="2290" y="1300"/>
-                            <mxPoint x="2400" y="1170"/>
+                            <mxPoint x="2542" y="1300"/>
+                            <mxPoint x="2652" y="1170"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="153" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="142" target="147" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="2160" y="1550.0018387776609" as="sourcePoint"/>
-                        <mxPoint x="2330" y="1550.0036301369864" as="targetPoint"/>
+                        <mxPoint x="2412" y="1550.0018387776609" as="sourcePoint"/>
+                        <mxPoint x="2582" y="1550.0036301369864" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="154" value="case 'fill_with_grouped'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="153" vertex="1" connectable="0">
@@ -448,8 +448,8 @@
                 </mxCell>
                 <mxCell id="157" style="edgeStyle=none;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="142" target="146" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="2889.9964855687604" y="1420" as="sourcePoint"/>
-                        <mxPoint x="3179.87" y="1529.5625" as="targetPoint"/>
+                        <mxPoint x="3141.9964855687604" y="1420" as="sourcePoint"/>
+                        <mxPoint x="3431.87" y="1529.5625" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
@@ -458,57 +458,57 @@
                         <mxPoint x="88" y="-13" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="159" value="Create &lt;b&gt;last_index&lt;/b&gt;&amp;nbsp;&lt;i&gt;integer&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;Dataframe_grouped.shape[0] &lt;/b&gt;&lt;i&gt;method&lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;to define a last position in created dataframe&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2207.5" y="1770" width="295" height="60" as="geometry"/>
+                <mxCell id="159" value="Create &lt;b&gt;last_index&lt;/b&gt;&amp;nbsp;&lt;i&gt;integer&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;dataframe_grouped.shape[0] &lt;/b&gt;&lt;i&gt;method&lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;to define a last position in created dataframe&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2459.5" y="1770" width="295" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="160" value="Create &lt;b&gt;last_index&lt;/b&gt;&amp;nbsp;&lt;i&gt;integer&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;Dataframe_compared.shape[0] &lt;/b&gt;&lt;i&gt;method&lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;to define a last position in created dataframe&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2697.5" y="1770" width="295" height="60" as="geometry"/>
+                <mxCell id="160" value="Create &lt;b&gt;last_index&lt;/b&gt;&amp;nbsp;&lt;i&gt;integer&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;dataframe_compared.shape[0] &lt;/b&gt;&lt;i&gt;method&lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;to define a last position in created dataframe&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2949.5" y="1770" width="295" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="161" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="146" target="160" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2630" y="1770" as="sourcePoint"/>
-                        <mxPoint x="2710" y="1770" as="targetPoint"/>
+                        <mxPoint x="2882" y="1770" as="sourcePoint"/>
+                        <mxPoint x="2962" y="1770" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="162" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="147" target="159" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2570" y="1780" as="sourcePoint"/>
-                        <mxPoint x="2650" y="1780" as="targetPoint"/>
+                        <mxPoint x="2822" y="1780" as="sourcePoint"/>
+                        <mxPoint x="2902" y="1780" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="163" value="Assign &lt;b&gt;grouped_values_dict &lt;/b&gt;&lt;i&gt;dictionary&lt;br&gt;&lt;/i&gt;to the last position of created dataframe&lt;br&gt;by using &lt;b&gt;Dataframe_grouped.loc[last_index] &lt;/b&gt;&lt;i&gt;method&lt;/i&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2193.75" y="1880" width="322.5" height="60" as="geometry"/>
+                <mxCell id="163" value="Assign &lt;b&gt;grouped_values_dict &lt;/b&gt;&lt;i&gt;dictionary&lt;br&gt;&lt;/i&gt;to the last position of created dataframe&lt;br&gt;by using &lt;b&gt;dataframe_grouped.loc[last_index] &lt;/b&gt;&lt;i&gt;method&lt;/i&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2445.75" y="1880" width="322.5" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="165" value="Assign &lt;b&gt;compared_row_dict &lt;/b&gt;&lt;i&gt;dictionary&lt;br&gt;&lt;/i&gt;to the last position of created dataframe&lt;br&gt;by using &lt;b&gt;Dataframe_compared.loc[last_index] &lt;/b&gt;&lt;i&gt;method&lt;/i&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2683.75" y="1880" width="322.5" height="60" as="geometry"/>
+                <mxCell id="165" value="Assign &lt;b&gt;compared_row_dict &lt;/b&gt;&lt;i&gt;dictionary&lt;br&gt;&lt;/i&gt;to the last position of created dataframe&lt;br&gt;by using &lt;b&gt;dataframe_compared.loc[last_index] &lt;/b&gt;&lt;i&gt;method&lt;/i&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2935.75" y="1880" width="322.5" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="166" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="159" target="163" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2520" y="1850" as="sourcePoint"/>
-                        <mxPoint x="2600" y="1850" as="targetPoint"/>
+                        <mxPoint x="2772" y="1850" as="sourcePoint"/>
+                        <mxPoint x="2852" y="1850" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="167" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="160" target="165" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2840" y="1860" as="sourcePoint"/>
-                        <mxPoint x="2920" y="1860" as="targetPoint"/>
+                        <mxPoint x="3092" y="1860" as="sourcePoint"/>
+                        <mxPoint x="3172" y="1860" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="169" value="Check if&amp;nbsp;&lt;b&gt;row&lt;/b&gt;&amp;nbsp;index is&amp;nbsp;&lt;br&gt;out of &lt;b&gt;df_range&lt;/b&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;&lt;b&gt;df&lt;/b&gt;3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Check%20parameter%3A%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3BResultstype%26amp%3Bnbsp%3B%26lt%3B%2Fb%26gt%3B%26lt%3Bi%26gt%3Bstr%26lt%3B%2Fi%26gt%3B%26lt%3Bbr%26gt%3Binput%20parameter%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontSize%3D12%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22988.5%22%20y%3D%22960%22%20width%3D%22345%22%20height%3D%22100%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;br&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="2416" y="1997" width="345" height="100" as="geometry"/>
+                    <mxGeometry x="2668" y="1997" width="345" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="170" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="169" target="138" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2910" y="2120" as="sourcePoint"/>
-                        <mxPoint x="2990" y="2120" as="targetPoint"/>
+                        <mxPoint x="3162" y="2120" as="sourcePoint"/>
+                        <mxPoint x="3242" y="2120" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="3160" y="2047"/>
-                            <mxPoint x="3160" y="1610"/>
-                            <mxPoint x="2810" y="1150"/>
+                            <mxPoint x="3412" y="2047"/>
+                            <mxPoint x="3412" y="1610"/>
+                            <mxPoint x="3062" y="1150"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -519,22 +519,22 @@
                 </mxCell>
                 <mxCell id="172" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="163" target="169" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2620" y="1970" as="sourcePoint"/>
-                        <mxPoint x="2700" y="1970" as="targetPoint"/>
+                        <mxPoint x="2872" y="1970" as="sourcePoint"/>
+                        <mxPoint x="2952" y="1970" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="173" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="165" target="169" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2680" y="1970" as="sourcePoint"/>
-                        <mxPoint x="2760" y="1970" as="targetPoint"/>
+                        <mxPoint x="2932" y="1970" as="sourcePoint"/>
+                        <mxPoint x="3012" y="1970" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="174" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="169" target="175" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2560" y="2220" as="sourcePoint"/>
-                        <mxPoint x="2640" y="2220" as="targetPoint"/>
+                        <mxPoint x="2812" y="2220" as="sourcePoint"/>
+                        <mxPoint x="2892" y="2220" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
@@ -543,16 +543,16 @@
                         <mxPoint x="21" y="-35" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="175" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;text-align: start; background-color: initial;&quot;&gt;If &lt;b&gt;Dataframe_grouped&lt;/b&gt;&amp;nbsp;is not empty&lt;/span&gt;&lt;b style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: initial;&quot;&gt;df&lt;/b&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: initial;&quot;&gt;3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Check%20parameter%3A%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3BResultstype%26amp%3Bnbsp%3B%26lt%3B%2Fb%26gt%3B%26lt%3Bi%26gt%3Bstr%26lt%3B%2Fi%26gt%3B%26lt%3Bbr%26gt%3Binput%20parameter%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontSize%3D12%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22988.5%22%20y%3D%22960%22%20width%3D%22345%22%20height%3D%22100%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="2647.5" y="2150" width="345" height="100" as="geometry"/>
+                <mxCell id="175" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;text-align: start; background-color: initial;&quot;&gt;assert&amp;nbsp;&lt;b&gt;dataframe_grouped&lt;/b&gt;&amp;nbsp;is not empty&lt;/span&gt;&lt;b style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: initial;&quot;&gt;df&lt;/b&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: initial;&quot;&gt;3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Check%20parameter%3A%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3BResultstype%26amp%3Bnbsp%3B%26lt%3B%2Fb%26gt%3B%26lt%3Bi%26gt%3Bstr%26lt%3B%2Fi%26gt%3B%26lt%3Bbr%26gt%3Binput%20parameter%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontSize%3D12%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22988.5%22%20y%3D%22960%22%20width%3D%22345%22%20height%3D%22100%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="2434.5" y="2170" width="345" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="177" value="create &lt;b&gt;changed_columns&lt;/b&gt;&amp;nbsp;&lt;i&gt;list&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;List_changed_columns() &lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;br&gt;&lt;i&gt;with&lt;/i&gt;&lt;br&gt;&lt;b&gt;Grouped_results, Exclude_columns, Grouping_columns &lt;/b&gt;as parameters" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2610" y="2310" width="420" height="80" as="geometry"/>
+                <mxCell id="177" value="create &lt;b&gt;changed_columns&lt;/b&gt;&amp;nbsp;&lt;i&gt;list&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;_list_changed_columns() &lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;br&gt;&lt;i&gt;with&lt;/i&gt;&lt;br&gt;&lt;b&gt;grouped_results, exclude_columns, grouping_columns &lt;/b&gt;as parameters" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2397" y="2330" width="420" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="178" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="175" target="177" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2800" y="2230" as="sourcePoint"/>
-                        <mxPoint x="2880" y="2230" as="targetPoint"/>
+                        <mxPoint x="2587" y="2250" as="sourcePoint"/>
+                        <mxPoint x="2667" y="2250" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
@@ -561,28 +561,28 @@
                         <mxPoint x="21" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="179" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;text-align: start; background-color: initial;&quot;&gt;If &lt;b&gt;Dataframe_compared&lt;/b&gt;&amp;nbsp;is not empty&lt;/span&gt;&lt;b style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: initial;&quot;&gt;df&lt;/b&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: initial;&quot;&gt;3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Check%20parameter%3A%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3BResultstype%26amp%3Bnbsp%3B%26lt%3B%2Fb%26gt%3B%26lt%3Bi%26gt%3Bstr%26lt%3B%2Fi%26gt%3B%26lt%3Bbr%26gt%3Binput%20parameter%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontSize%3D12%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22988.5%22%20y%3D%22960%22%20width%3D%22345%22%20height%3D%22100%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="3217.5" y="2150" width="345" height="100" as="geometry"/>
+                <mxCell id="179" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;text-align: start; background-color: initial;&quot;&gt;assert &lt;b&gt;dataframe_compared&lt;/b&gt;&amp;nbsp;is not empty&lt;/span&gt;&lt;b style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: initial;&quot;&gt;df&lt;/b&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; background-color: initial;&quot;&gt;3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Check%20parameter%3A%26lt%3Bbr%26gt%3B%26lt%3Bb%26gt%3BResultstype%26amp%3Bnbsp%3B%26lt%3B%2Fb%26gt%3B%26lt%3Bi%26gt%3Bstr%26lt%3B%2Fi%26gt%3B%26lt%3Bbr%26gt%3Binput%20parameter%22%20style%3D%22rhombus%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfontSize%3D12%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22988.5%22%20y%3D%22960%22%20width%3D%22345%22%20height%3D%22100%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="3187.5" y="2170" width="345" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="180" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="175" target="179" edge="1">
+                <mxCell id="180" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="175" target="214" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2640" y="2280" as="sourcePoint"/>
-                        <mxPoint x="2720" y="2280" as="targetPoint"/>
+                        <mxPoint x="2892" y="2280" as="sourcePoint"/>
+                        <mxPoint x="2940" y="2280" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="181" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="180" vertex="1" connectable="0">
                     <mxGeometry x="-0.3587" relative="1" as="geometry">
-                        <mxPoint x="22" y="-20" as="offset"/>
+                        <mxPoint x="48" y="-6" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="184" value="create &lt;b&gt;changed_columns&lt;/b&gt;&amp;nbsp;&lt;i&gt;list&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;List_changed_columns() &lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;br&gt;&lt;i&gt;with&lt;/i&gt;&lt;br&gt;&lt;b&gt;Grouped_results, Exclude_columns, Grouping_columns &lt;/b&gt;as parameters" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="3180" y="2310" width="420" height="80" as="geometry"/>
+                <mxCell id="184" value="create &lt;b&gt;changed_columns&lt;/b&gt;&amp;nbsp;&lt;i&gt;list&lt;/i&gt;&lt;br&gt;by using _l&lt;b&gt;ist_changed_columns() &lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;br&gt;&lt;i&gt;with&lt;/i&gt;&lt;br&gt;&lt;b&gt;grouped_results, exclude_columns, grouping_columns &lt;/b&gt;as parameters" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="3150" y="2330" width="420" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="185" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="179" target="184" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2877.5" y="2310" as="sourcePoint"/>
-                        <mxPoint x="2967.5" y="2310" as="targetPoint"/>
+                        <mxPoint x="2847.5" y="2330" as="sourcePoint"/>
+                        <mxPoint x="2937.5" y="2330" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
@@ -591,110 +591,131 @@
                         <mxPoint x="22" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="187" value="create &lt;b&gt;new_column_names&amp;nbsp;&lt;/b&gt;&lt;i&gt;list&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;List_new_columns_names() &lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;br&gt;&lt;i&gt;with&lt;/i&gt;&lt;br&gt;&lt;b&gt;changed_columns, Analysistype, Grouping_columns, name='abs'&amp;nbsp;&lt;/b&gt;as parameters" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2580" y="2430" width="480" height="80" as="geometry"/>
+                <mxCell id="187" value="create &lt;b&gt;new_column_names&amp;nbsp;&lt;/b&gt;&lt;i&gt;list&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;_list_new_columns_names() &lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;br&gt;&lt;i&gt;with&lt;/i&gt;&lt;br&gt;&lt;b&gt;changed_columns, analysis_type, grouping_columns, name='abs'&amp;nbsp;&lt;/b&gt;as parameters" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2367" y="2450" width="480" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="188" value="create &lt;b&gt;new_column_names&amp;nbsp;&lt;/b&gt;&lt;i&gt;list&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;List_new_columns_names() &lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;br&gt;&lt;i&gt;with&lt;/i&gt;&lt;br&gt;&lt;b&gt;changed_columns, Analysistype, Grouping_columns, name='rel'&amp;nbsp;&lt;/b&gt;as parameters" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="3150" y="2430" width="480" height="80" as="geometry"/>
+                <mxCell id="188" value="create &lt;b&gt;new_column_names&amp;nbsp;&lt;/b&gt;&lt;i&gt;list&lt;/i&gt;&lt;br&gt;by using _l&lt;b&gt;ist_new_columns_names() &lt;/b&gt;&lt;i&gt;function&lt;/i&gt;&lt;br&gt;&lt;i&gt;with&lt;/i&gt;&lt;br&gt;&lt;b&gt;changed_columns, analysis_type, grouping_columns, name='rel'&amp;nbsp;&lt;/b&gt;as parameters" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="3120" y="2450" width="480" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="189" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="177" target="187" edge="1">
+                <mxCell id="189" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="177" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="3120" y="2390" as="sourcePoint"/>
-                        <mxPoint x="3200" y="2390" as="targetPoint"/>
+                        <mxPoint x="2907" y="2410" as="sourcePoint"/>
+                        <mxPoint x="2607" y="2450" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="190" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="184" target="188" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="3150" y="2390" as="sourcePoint"/>
-                        <mxPoint x="3230" y="2390" as="targetPoint"/>
+                        <mxPoint x="3120" y="2410" as="sourcePoint"/>
+                        <mxPoint x="3200" y="2410" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="191" value="create &lt;b&gt;rename_dict&amp;nbsp;&lt;/b&gt;&lt;i&gt;dictionary&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;dict(zip(changed,columns, new_column_names))&amp;nbsp;&lt;/b&gt;&lt;i&gt;function&lt;/i&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2620" y="2540" width="400" height="60" as="geometry"/>
+                    <mxGeometry x="2407" y="2560" width="400" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="192" value="create &lt;b&gt;rename_dict&amp;nbsp;&lt;/b&gt;&lt;i&gt;dictionary&lt;/i&gt;&lt;br&gt;by using &lt;b&gt;dict(zip(changed,columns, new_column_names))&amp;nbsp;&lt;/b&gt;&lt;i&gt;function&lt;/i&gt;" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="3190" y="2540" width="400" height="60" as="geometry"/>
+                    <mxGeometry x="3160" y="2560" width="400" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="193" value="modify &lt;b&gt;Dataframe_grouped &lt;/b&gt;&lt;i&gt;dataframe&lt;/i&gt;&lt;br&gt;by using&lt;b style=&quot;&quot;&gt;&amp;nbsp;Dataframe_grouped.raname() &lt;/b&gt;&lt;i&gt;method&lt;br&gt;&lt;/i&gt;with&lt;br&gt;columns=rename_dict&lt;br&gt;inplace=True" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="2680" y="2630" width="280" height="90" as="geometry"/>
+                <mxCell id="193" value="modify &lt;b&gt;dataframe_grouped &lt;/b&gt;&lt;i&gt;dataframe&lt;/i&gt;&lt;br&gt;by using&lt;b style=&quot;&quot;&gt;&amp;nbsp;dataframe_grouped.raname() &lt;/b&gt;&lt;i&gt;method&lt;br&gt;&lt;/i&gt;with&lt;br&gt;columns=rename_dict&lt;br&gt;inplace=True" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="2467" y="2650" width="280" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="195" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="187" target="191" edge="1">
+                <mxCell id="195" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" target="191" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2830" y="2520" as="sourcePoint"/>
-                        <mxPoint x="2910" y="2520" as="targetPoint"/>
+                        <mxPoint x="2607" y="2530" as="sourcePoint"/>
+                        <mxPoint x="2697" y="2540" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="196" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="191" target="193" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2880" y="2620" as="sourcePoint"/>
-                        <mxPoint x="2960" y="2620" as="targetPoint"/>
+                        <mxPoint x="2667" y="2640" as="sourcePoint"/>
+                        <mxPoint x="2747" y="2640" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="198" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="193" target="199" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="2810" y="2760" as="sourcePoint"/>
-                        <mxPoint x="2890" y="2760" as="targetPoint"/>
+                        <mxPoint x="2597" y="2780" as="sourcePoint"/>
+                        <mxPoint x="2677" y="2780" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="200" value="return &lt;b&gt;Dataframe_grouped &lt;/b&gt;&lt;i style=&quot;&quot;&gt;dataframe&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="198" vertex="1" connectable="0">
+                <mxCell id="200" value="return &lt;b&gt;dataframe_grouped &lt;/b&gt;&lt;i style=&quot;&quot;&gt;dataframe&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="198" vertex="1" connectable="0">
                     <mxGeometry x="-0.3481" y="3" relative="1" as="geometry">
                         <mxPoint x="107" y="14" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="199" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=24;fillColor=#000000;strokeColor=default;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-                    <mxGeometry x="2810" y="2800" width="20" height="20" as="geometry"/>
+                    <mxGeometry x="2597" y="2820" width="20" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="201" value="modify &lt;b&gt;Dataframe_compared&amp;nbsp;&lt;/b&gt;&lt;i&gt;dataframe&lt;/i&gt;&lt;br&gt;by using&lt;b style=&quot;&quot;&gt;&amp;nbsp;Dataframe_compared.raname() &lt;/b&gt;&lt;i&gt;method&lt;br&gt;&lt;/i&gt;with&lt;br&gt;columns=rename_dict&lt;br&gt;inplace=True" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
-                    <mxGeometry x="3245" y="2630" width="290" height="90" as="geometry"/>
+                <mxCell id="201" value="modify &lt;b&gt;dataframe_compared&amp;nbsp;&lt;/b&gt;&lt;i&gt;dataframe&lt;/i&gt;&lt;br&gt;by using&lt;b style=&quot;&quot;&gt;&amp;nbsp;dataframe_compared.raname() &lt;/b&gt;&lt;i&gt;method&lt;br&gt;&lt;/i&gt;with&lt;br&gt;columns=rename_dict&lt;br&gt;inplace=True" style="whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;align=left;spacing=10;" parent="1" vertex="1">
+                    <mxGeometry x="3215" y="2650" width="290" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="202" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="201" target="204" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="3380" y="2760" as="sourcePoint"/>
-                        <mxPoint x="3460" y="2760" as="targetPoint"/>
+                        <mxPoint x="3350" y="2780" as="sourcePoint"/>
+                        <mxPoint x="3430" y="2780" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="203" value="return &lt;b&gt;Dataframe_compared&amp;nbsp;&lt;/b&gt;&lt;i style=&quot;&quot;&gt;dataframe&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="202" vertex="1" connectable="0">
+                <mxCell id="203" value="return &lt;b&gt;dataframe_compared&amp;nbsp;&lt;/b&gt;&lt;i style=&quot;&quot;&gt;dataframe&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="202" vertex="1" connectable="0">
                     <mxGeometry x="-0.3481" y="3" relative="1" as="geometry">
                         <mxPoint x="114" y="14" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="204" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=24;fillColor=#000000;strokeColor=default;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-                    <mxGeometry x="3380" y="2800" width="20" height="20" as="geometry"/>
+                    <mxGeometry x="3350" y="2820" width="20" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="205" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="188" target="192" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="3440" y="2520" as="sourcePoint"/>
-                        <mxPoint x="3520" y="2520" as="targetPoint"/>
+                        <mxPoint x="3410" y="2540" as="sourcePoint"/>
+                        <mxPoint x="3490" y="2540" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="206" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="192" target="201" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="3440" y="2620" as="sourcePoint"/>
-                        <mxPoint x="3520" y="2620" as="targetPoint"/>
+                        <mxPoint x="3410" y="2640" as="sourcePoint"/>
+                        <mxPoint x="3490" y="2640" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="207" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=24;fillColor=#000000;strokeColor=default;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-                    <mxGeometry x="3790" y="2190" width="20" height="20" as="geometry"/>
-                </mxCell>
-                <mxCell id="208" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="179" target="207" edge="1">
+                <mxCell id="208" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" source="179" target="216" edge="1">
                     <mxGeometry width="80" relative="1" as="geometry">
-                        <mxPoint x="3540" y="2160" as="sourcePoint"/>
-                        <mxPoint x="3620" y="2160" as="targetPoint"/>
+                        <mxPoint x="3510" y="2180" as="sourcePoint"/>
+                        <mxPoint x="3760" y="2220" as="targetPoint"/>
                         <Array as="points"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="209" value="False - no value returned" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="208" vertex="1" connectable="0">
+                <mxCell id="209" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="208" vertex="1" connectable="0">
                     <mxGeometry x="0.1175" y="-1" relative="1" as="geometry">
                         <mxPoint x="-19" y="-21" as="offset"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="210" value="case 'fill_with_grouped'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="2689.998584919169" y="2089.9978152748654" as="geometry"/>
+                </mxCell>
+                <mxCell id="211" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="169" target="179">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="3060" y="2150" as="sourcePoint"/>
+                        <mxPoint x="3140" y="2150" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="212" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="211">
+                    <mxGeometry x="0.2659" y="1" relative="1" as="geometry">
+                        <mxPoint x="39" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="213" value="case 'calculate_relative_grouped'" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="3090.0027929497796" y="2089.99676888869" as="geometry"/>
+                </mxCell>
+                <mxCell id="214" value="Raise &lt;b&gt;AssertionError&lt;/b&gt;&lt;br&gt;with&amp;nbsp;'The result dataframe is empty. Analysis has failed.' message." style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;" vertex="1" parent="1">
+                    <mxGeometry x="2877" y="2240" width="213" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="216" value="Raise &lt;b&gt;AssertionError&lt;/b&gt;&lt;br&gt;with&amp;nbsp;'The result dataframe is empty. Analysis has failed.' message." style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=10;" vertex="1" parent="1">
+                    <mxGeometry x="3670" y="2240" width="213" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
