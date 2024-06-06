@@ -76,7 +76,7 @@ def perform_dataframe_analysis(user_dataframe: pd.DataFrame,
     exclude_recognised_boolean_columns (bool): Whether to exclude columns containing only values of [0,1],
                                                considered as Boolean data. Default is True.
     grouping_dropna (bool): Whether to drop NA values during grouping. Default is False.
-    fill_NaN_values_of_grouping_columns (bool): Whether to fill NaN values in grouping columns 
+    fill_NaN_values_of_grouping_columns (bool): Whether to fill NaN values with a 'NaN' str in grouping columns 
                                                 before analysis. Default is True.
 
     Returns:

@@ -1,10 +1,10 @@
-# grouping_analysis
+# Grouping_Analysis
 
-grouping_analysis is a Python script and function for grouping data within a given dataset and calculating simple reference values to their grouped characteristics.
+Grouping_Analysis is a Python script and function for grouping data within a given dataset and calculating simple reference values to their grouped characteristics.
 
 ## Installation
 
-grouping_analysis is a single file Python script and doesn't require explicit installation. 
+Grouping_Analysis is a single file Python script and doesn't require explicit installation. 
 Script uses [pandas](https://pypi.org/project/pandas/) library.
 
 ```bash
@@ -72,7 +72,13 @@ You can enable this manually when using imported perform_dataframe_analysis() fu
 
 - What does the fill_NaN_values_of_grouping_columns change?
 
-This is a safety measure which automatically 
+This is a safety measure which automatically replacec NaN values with "NaN" str value in the columns selected for grouping. This prevents errors when indexing and calculating values for the resultant dataframe.
+
+- Where did you obtain the data for example files?
+
+They are available on kaggle.com for free, upon registration in the service.
+https://www.kaggle.com/datasets/vinicius150987/titanic3
+https://www.kaggle.com/datasets/abcsds/pokemon
 
 - I see that inside this file there are many #comments or #TODO notes, why?
 
