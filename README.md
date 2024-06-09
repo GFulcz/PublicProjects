@@ -1,14 +1,29 @@
-# Grouping_Analysis
+# Grouping_analysis
 
-Grouping_Analysis is a Python script and function for grouping data within a given dataset and calculating simple reference values to their grouped characteristics.
+Grouping_analysis is a Python script and function for grouping data within a given dataset and calculating simple reference values to their grouped characteristics.
 
 ## Installation
 
-Grouping_Analysis is a single file Python script and doesn't require explicit installation. 
+Grouping_analysis is a single file Python script and doesn't require explicit installation. 
 Script uses [pandas](https://pypi.org/project/pandas/) library.
 
 ```bash
 pip install pandas
+```
+
+## How to use?
+
+It is required to run the included grouping_analysis.py file.
+
+```bash
+python .\grouping_analysis.py
+```
+
+Then it is recommended to use the attached example files as datasets for analysis. They are located at:
+
+```bash
+.\grouping_example_files\Pokemon.csv
+.\grouping_example_files\titanic3.xls
 ```
 
 ## FAQ
@@ -77,7 +92,9 @@ This is a safety measure which automatically replacec NaN values with "NaN" str 
 - Where did you obtain the data for example files?
 
 They are available on kaggle.com for free, upon registration in the service.
+
 https://www.kaggle.com/datasets/vinicius150987/titanic3
+
 https://www.kaggle.com/datasets/abcsds/pokemon
 
 - I see that inside this file there are many #comments or #TODO notes, why?

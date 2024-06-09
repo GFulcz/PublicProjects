@@ -252,14 +252,18 @@ class FileType(Enum):
         # function for every object in list created by list(AnalysisType)
         # ['max', 'min', 'sum', 'mean', 'median', 'std', 'Confidence_interval']
 
-def validate_textinput(text_input: str, valid_options: list, separator: str = ',') -> list | None:
+def validate_textinput(text_input: str, valid_options: list,
+                       separator: str = ',', null_input_disabled: bool = True) -> list | None:
     '''
     This function accepts text_input coming from the user and compares it with possible predefined valid_options.
     '''
+    # TODO for excluded columns allow for not selecting any column and null input
+    if null_input_disabled is True:
+        if len(text_input) == 0:
+            print('Text input contains no data. Please try again.')
+            return None
     text_input = text_input.split(separator)
-    if len(text_input) == 0:
-        print('Text input contains no data. Please try again.')
-        return None
+
     text_input_list = []
     for item in text_input:
         item = item.strip()
@@ -316,7 +320,7 @@ if __name__ == '__main__':
     # User input validation and loops
     iterator = 0
     while iterator < INPUT_LIMIT:
-        user_input = str(input('Please select columns for grouping from the above, separated by a "," comma:\n'))
+        user_input = str(input('Please select at least one column for grouping from the above, separated by a "," comma:\n'))
         user_grouping_columns = validate_textinput(user_input, valid_columns)
         print(user_grouping_columns)
         if user_grouping_columns is not None:
@@ -326,7 +330,7 @@ if __name__ == '__main__':
 
     iterator = 0
     while iterator < INPUT_LIMIT:
-        user_input = str(input('\nPlease select columns to be excluded from the analysis, separated by a "," comma:\n'))
+        user_input = str(input('\nPlease select at least one column to be excluded from the analysis, separated by a "," comma:\n'))
         user_exclude_columns = validate_textinput(user_input, valid_columns)
         if user_exclude_columns is not None:
             break
